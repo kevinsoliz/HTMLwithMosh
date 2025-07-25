@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lists</title>
+    <style>
+      ul {
+        list-style-type: none;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>About me</li>
+      <li>
+        Courses
+        <ul>
+          <!--Truco: li*3-->
+          <li>HTML</li>
+          <li>JavaScropt</li>
+          <li>Git</li>
+        </ul>
+      </li>
+      <li>Projects</li>
+      <li>Contact</li>
+      <br />
+    </ul>
+    <!--Truco: ol>li*3 -->
+    <ol>
+      <li>Preheat the oven</li>
+      <li>Place the ingredients on the crust</li>
+      <li>Put the pizza in the oven</li>
+    </ol>
+
+    <!--Description lists for implementing glossaries or display metadata-->
+    <dl>
+      <dt>HTML</dt>
+      <dd>Hypertext Markup Language</dd>
+      <dt>CSS</dt>
+      <dd>Cascading Style Sheets</dd>
+    </dl>
+  </body>
+</html>
