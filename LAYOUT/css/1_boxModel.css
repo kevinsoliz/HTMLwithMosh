@@ -59,3 +59,15 @@ elements tienen width y height y al igual que los inline no se insertan en una n
 .box2::before {
   content: "Hello"; /* esta propiedad solo se usa con pseudo elementos */
 }
+
+/*OVERFLOWING*/
+
+.box3 {
+  border: 3px solid gold;
+  width: 150px;
+  height: 150px;
+  /*overflow: auto;
+   esta propiedad is a shorthand for overflow-x and overflow-y */
+  overflow: hidden /* para ocultar la barra horizontal */ auto
+    /* para mostrar la barra si es necesaria.*/;
+}
