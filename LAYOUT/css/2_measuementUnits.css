@@ -6,6 +6,7 @@
 
 body {
   margin: 10px;
+  width: 300px;
 }
 
 table,
@@ -22,7 +23,9 @@ th {
 }
 
 .box {
-  width: 100px;
+  /* 50% of the width of the parent */
+  /* fijate que al final el browser lo convierte a px: 150 px
+  width: 50%; /* el padre es el body element*/
   height: 100px;
   background-color: gold;
   border-top: 3px solid orange; /* esta es una de las aplicaciones comunes del uso de px */
