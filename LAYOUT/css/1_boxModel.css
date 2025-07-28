@@ -1,0 +1,15 @@
+#p1 {
+    padding: 10px 20px; /* vertical and horizontal padding */
+    border: 5px solid gold;
+}
+
+/* #p2 {
+    padding: 20px; // los paddings no collapsan entre parrafo y parrafo habrán
+    40 px de espacio.
+    margin: 0px; /* get rid of default margin */
+#p2 {
+    padding: 0;
+    margin: 20px; /* entre párrafo y párrafo habrá 20px de espacio */
+    /*margin collapsing */
+}
+
