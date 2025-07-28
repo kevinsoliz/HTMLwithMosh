@@ -26,14 +26,17 @@ th {
 }
 
 .box {
-  width: 50vw; /*conseguimos el mismo resultado*/
+  width: 10em; /* significa 10 x font size of the current element,
+  como box no tiene fontsize lo va a heredar de body, pero body tampoco tiene
+  asi que lo va a heredad del documento html y este establece un valor de
+  16px por defecto.
+  Osea que 10 * 16px = 160px 
+  Entonces el problema de esta unidad es que tienes que localizar la fontsize del padre. 
+  Esto se complicaria por eso es que tenemos otra unidad: rem */
 
   height: 100vh; /*Viewport height: significa el 100% de la altura del viewport*/
   background-color: gold;
   border-top: 3px solid orange; /* la linea que ves es los 3px del borde (el único valor absoluto)*/
-  /*
-    /*Ahora para que el height ocupe toda la pantalla debemos usar view port units.
-    Con ellas podemos resize our elements according with the viewport.*/
 }
 
 /*Tenemos otras unidades: em and rem que son relativas al font-size, las usamos 
