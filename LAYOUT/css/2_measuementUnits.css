@@ -26,14 +26,19 @@ th {
 }
 
 .box {
-  /* 50% of the width of the parent, if you resized the browser window our
-  box also get resized. Este es el beneficio de los relative units, con
-  ellos podemos crear Layouts that adjust broser screen sizes. We can create
-  more scalable layouts.*/
-  /* fijate que al final el browser lo convierte a px: 150 px*/
-  width: 50%; /* el padre es el body element*/
-  height: 100px;
+  width: 50%;
+  /*Ahora pensarás que si el height está definido al 100% tu box va a ocupar toda 
+  la pantalla, no, ocupará solo una linea. */
+  height: 100%; /*Por defecto el height de los block-level elements es 0*/
   background-color: gold;
-  border-top: 3px solid orange; /* esta es una de las aplicaciones comunes del uso de px */
-  /* si el width del padre (body) no se especifica tomará el 50% del 100% de ancho */
+  border-top: 3px solid orange; /* la linea que ves es los 3px del borde (el único valor absoluto)*/
+  /*
+    /*Ahora para que el height ocupe toda la pantalla debemos usar view port units.
+    Viewport units (vw, vh, vmin, vmax) permiten definir tamaños relativos al tamaño de la ventana del navegador.
+    - 1vw equivale al 1% del ancho del viewport.
+    - 1vh equivale al 1% de la altura del viewport.
+    - 1vmin equivale al 1% del valor menor entre el ancho y la altura del viewport.
+    - 1vmax equivale al 1% del valor mayor entre el ancho y la altura del viewport.
+    Usar estas unidades es útil para crear diseños responsivos que se adapten a diferentes tamaños de pantalla.
+  */
 }
