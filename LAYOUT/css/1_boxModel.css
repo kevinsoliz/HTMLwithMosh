@@ -1,3 +1,6 @@
+body {
+    margin: 10px;
+}
 #p1 {
     padding: 10px 20px; /* vertical and horizontal padding */
     border: 5px solid gold;
@@ -13,3 +16,19 @@
     /*margin collapsing */
 }
 
+.box {
+    /* El width y height aplican al contenido exclusivamente, el padding y border se suman al tamaño total del elemento */
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    /* Pero el margin no se suma, es un espacio externo, it will just move this box
+    away from other boxes */
+    padding: 10px;
+    border: 20px solid dodgerblue;
+    margin:50px;
+    /* calcular el tamaño real de la caja es complicado, necesitas the box-sizing property */
+    /* por defecto el box-sizing es content-box, lo que significa que el width y height son del contenido */
+    /* si quieres que el width y height incluyan el padding y border, usa border-box */
+    box-sizing: border-box;
+    /* Ahora no queremos aplicar esta propiedad a todos los elementos todo el tiempo, por eso usamos el universal selector: *, sí, es un asterisco. Y lo poneas al principio del todo. */
+}
