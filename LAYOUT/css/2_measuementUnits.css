@@ -26,19 +26,15 @@ th {
 }
 
 .box {
-  width: 50%;
-  /*Ahora pensarás que si el height está definido al 100% tu box va a ocupar toda 
-  la pantalla, no, ocupará solo una linea. */
-  height: 100%; /*Por defecto el height de los block-level elements es 0*/
+  width: 50vw; /*conseguimos el mismo resultado*/
+
+  height: 100vh; /*Viewport height: significa el 100% de la altura del viewport*/
   background-color: gold;
   border-top: 3px solid orange; /* la linea que ves es los 3px del borde (el único valor absoluto)*/
   /*
     /*Ahora para que el height ocupe toda la pantalla debemos usar view port units.
-    Viewport units (vw, vh, vmin, vmax) permiten definir tamaños relativos al tamaño de la ventana del navegador.
-    - 1vw equivale al 1% del ancho del viewport.
-    - 1vh equivale al 1% de la altura del viewport.
-    - 1vmin equivale al 1% del valor menor entre el ancho y la altura del viewport.
-    - 1vmax equivale al 1% del valor mayor entre el ancho y la altura del viewport.
-    Usar estas unidades es útil para crear diseños responsivos que se adapten a diferentes tamaños de pantalla.
-  */
+    Con ellas podemos resize our elements according with the viewport.*/
 }
+
+/*Tenemos otras unidades: em and rem que son relativas al font-size, las usamos 
+cuando we want to adjust the layout according to the font size. */
