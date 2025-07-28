@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10px;
+}
+
+table,
+th,
+td {
+  border: 3px solid dodgerblue;
+  border-collapse: collapse;
+  padding: 5px 10px;
+}
+
+th {
+  color: white;
+  background-color: dodgerblue;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  border-top: 3px solid orange; /* esta es una de las aplicaciones comunes del uso de px */
+}
