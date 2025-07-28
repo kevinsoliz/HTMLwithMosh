@@ -6,9 +6,12 @@
 
 body {
   margin: 10px;
-  width: 300px;
+  /* 
+    Por defecto, los elementos de tipo block (como <body>, <div>, <p>, etc.)
+    tienen un width del 100% de su contenedor padre, aunque no se especifique.
+    Esto significa que ocupan todo el ancho disponible automáticamente.
+  */
 }
-
 table,
 th,
 td {
@@ -23,10 +26,14 @@ th {
 }
 
 .box {
-  /* 50% of the width of the parent */
-  /* fijate que al final el browser lo convierte a px: 150 px
+  /* 50% of the width of the parent, if you resized the browser window our
+  box also get resized. Este es el beneficio de los relative units, con
+  ellos podemos crear Layouts that adjust broser screen sizes. We can create
+  more scalable layouts.*/
+  /* fijate que al final el browser lo convierte a px: 150 px*/
   width: 50%; /* el padre es el body element*/
   height: 100px;
   background-color: gold;
   border-top: 3px solid orange; /* esta es una de las aplicaciones comunes del uso de px */
+  /* si el width del padre (body) no se especifica tomará el 50% del 100% de ancho */
 }
