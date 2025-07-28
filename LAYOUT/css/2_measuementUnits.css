@@ -1,3 +1,7 @@
+html {
+  font-size: 62.5%; /*62.5 of 16px = 10px */
+}
+
 *,
 *::after,
 *::before {
@@ -26,13 +30,14 @@ th {
 }
 
 .box {
-  width: 10em; /* significa 10 x font size of the current element,
-  como box no tiene fontsize lo va a heredar de body, pero body tampoco tiene
-  asi que lo va a heredad del documento html y este establece un valor de
-  16px por defecto.
-  Osea que 10 * 16px = 160px 
+  width: 10rem; /*
   Entonces el problema de esta unidad es que tienes que localizar la fontsize del padre. 
-  Esto se complicaria por eso es que tenemos otra unidad: rem */
+  Esto se complicaria por eso es que tenemos otra unidad: rem 
+  Ahora tenemos 10 x font size of the root element 
+  y cuál es esta? Pues 16px por defecto, este será el 
+  único número que tendrás que memorizar y te olvidas de la jerarquia.
+  Pero imagina que estableces tu width a 15rem, ya pierdes la cuenta. Por eso
+  establecemos el font size de html al 62.5% eso son 10px de 16.*/
 
   height: 100vh; /*Viewport height: significa el 100% de la altura del viewport*/
   background-color: gold;
