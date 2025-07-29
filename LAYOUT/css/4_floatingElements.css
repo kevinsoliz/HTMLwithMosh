@@ -9,6 +9,12 @@ body {
 }
 .tweet {
   border: 3px solid black;
+  /* Cualquier value other than visible, como hidden, scroll, auto, o inherit, hará que el elemento no se ajuste a los elementos flotantes. 
+  Podrias usar auto pero el problema es que podrias terminar con scroll bars.
+  Con hidden el contenido se podria cortar.
+  Asi que overflow no es la mejor manera de resolver este problema.
+  Usar esta opción es un hack: a dirty solution.*/
+  overflow: auto;
 }
 /*De esta manera no contaminamos nuestro html*/
 .tweet::after {
