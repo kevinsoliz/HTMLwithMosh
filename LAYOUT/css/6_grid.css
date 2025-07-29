@@ -5,7 +5,12 @@ body {
 .container {
   display: grid;
   /* 3 x 2 */
-  grid-template-rows: repeat(3, 100px); /* facilita los cambios */
-  grid-template-columns: repeat(2, 100px); /* facilita los cambios */
+  grid-template: repeat(3, 100px) / repeat(2, 100px); /* shorthand syntax */
   border: 3px solid dodgerblue;
+}
+
+.box {
+  width: 5rem;
+  height: 5rem;
+  background-color: gold;
 }
