@@ -4,9 +4,16 @@ body {
 
 .container {
   display: grid;
-  /* 3 x 2 */
   grid-template: repeat(3, 100px) / repeat(2, 100px); /* shorthand syntax */
   border: 3px solid dodgerblue;
+  justify-items: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center the grid within the container */
+  align-content: center; /* Center the grid within the container vertically */
+  height: 70vh;
+  /*para recordar:
+  si ves content es porque es el contenedor,
+  si ves items es porque es el item dentro del contenedor*/
 }
 
 .box {
