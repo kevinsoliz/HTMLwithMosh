@@ -1,0 +1,42 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10px;
+}
+
+.boxes {
+  border: 3px solid black;
+}
+
+.box {
+  width: 5rem;
+  height: 5rem;
+}
+/*Con relative el elemento se posiciona con respecto a su posicion original, con absolute
+con respecto a su padre o contenedor. */
+.box-one {
+  background-color: gold;
+}
+
+.box-two {
+  background-color: tomato;
+  /* Por defecto el elemento tiene position: static, 
+     pero podemos cambiarlo a relative para poder usar top, left, etc. */
+  position: relative; /* cambiamos su posición en relación a su posición original */
+  left: 3rem; /* desplazamos 5rem a la derecha, también se pueden usar unidades */
+  top: -3rem; /* desplazamos 5rem hacia arriba */
+  z-index: -1; /* esta propiedad controla el apilamiento de los elementos, 
+                 un valor negativo lo coloca detrás de otros elementos */
+}
+
+.box-three {
+  background-color: dodgerblue;
+}
