@@ -13,6 +13,8 @@ body {
   En este caso no va a pasar nada porque el contenedor no tiene suficiente espacio. 
   Tienes que añadir un height. */
   height: 90vh;
+  /* Qué pasa con align-content? 
+  Esta propiedad solo funciona cuando tenemos multiple lines in our flex container. */
 }
 
 .box {
