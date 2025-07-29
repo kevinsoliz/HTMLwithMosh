@@ -24,3 +24,8 @@ body {
 .box-four {
   grid-area: footer;
 }
+
+/* Hiding elements */
+.first {
+  display: none; /* el segundo parrafo toma su lugar */
+}
