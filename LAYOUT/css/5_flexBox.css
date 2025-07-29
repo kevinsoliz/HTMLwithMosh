@@ -10,10 +10,11 @@ body {
   align-items: center;
   height: 70vh;
 }
-/*Ahora queremos mover una sola caja hacia arriba.*/
 .box {
   flex-basis: 15rem;
-  flex-shrink: 1; /* Se encoge en relación al espacio disponible */
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex: 1 1; /* shorthand for flex-grow (el primero es este), flex-shrink, and flex-basis */
   width: 5rem;
   height: 5rem;
   background-color: dodgerblue;
