@@ -10,6 +10,8 @@ html {
 
 body {
   margin: 10px;
+  height: 200vh; /* Cualquiera que sea el tamaño del viewport, 
+  lo multiplicamos por 2. Para que haya espacio para hacer scroll */
 }
 
 .boxes {
@@ -21,25 +23,21 @@ body {
   width: 5rem;
   height: 5rem;
 }
-/*Con relative el elemento se posiciona con respecto a su posicion original, con absolute
-con respecto a su padre o contenedor. */
+
 .box-one {
   background-color: gold;
 }
-
+/* A veces querremos que un elemento se posicione en relación al viewport, 
+   en lugar de a su contenedor. Para esto usamos position: fixed */
 .box-two {
   background-color: tomato;
   /* Por defecto el elemento tiene position: static, 
      pero podemos cambiarlo a relative para poder usar top, left, etc. */
-  position: absolute;
-  right: 0; /* Se posiciona a la derecha del contenedor */
-  bottom: 0; /* Se posiciona en la parte inferior del contenedor */
+  position: fixed;
+  top: 0; /* Posiciona el elemento 0px desde la parte superior del viewport y se va a quedar
+  ahi aunque hagas scroll. Lo podrias usar para una top navigation bar */
 }
-/* La propiedad position: absolute hace que el elemento se posicione en relación a su contenedor más cercano con position: relative, 
-   en este caso, .boxes. Si no hay un contenedor relativo, se posiciona en relación al viewport. */
 
-/* when we absolutely postion an element, that element is removed from the normal flow ot 
-the page, and all the other elements will rend as if that element does not exist. */
 .box-three {
   background-color: dodgerblue;
 }
