@@ -6,6 +6,7 @@ body {
 .container {
   border: 3px solid grey;
   display: flex; /* ya está */
+  flex-direction: column; /* también tienes column-reverse, también row-reverse (esto se usa en right to left languages)*/
 }
 
 .box {
