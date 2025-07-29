@@ -1,0 +1,16 @@
+body {
+  margin: 10px;
+}
+
+/* Para poner los elementos en horizontal: */
+.container {
+  border: 3px solid grey;
+  display: flex; /* ya está */
+}
+
+.box {
+  width: 5rem;
+  height: 5rem;
+  background-color: dodgerblue;
+  margin: 1rem;
+}
