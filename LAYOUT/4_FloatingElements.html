@@ -11,10 +11,9 @@
     <header>
       <h1>Floating Elements</h1>
     </header>
-    <article class="tweet">
+    <article class="tweet clearfix">
       <div class="avatar"></div>
       <p>Lorem ipsum dolor sit amet.</p>
-      <div class="clear"></div>
     </article>
     <article>
       <h2>Problema con float</h2>
@@ -23,7 +22,7 @@
         elements y estos colapsan. Hay dos soluciones:
       </p>
 
-      <ul>
+      <ol>
         <li>
           Agregar un elemento con clear: both; En este caso un div con la clase
           clear. Cada vez que uses float, debes agregar un elemento con clear.
@@ -31,7 +30,8 @@
           nada al browser engines.
         </li>
         <li>Podemos usar pseudoelementos.</li>
-      </ul>
+        <li>Podemos usar the overflow property.</li>
+      </ol>
     </article>
   </body>
 </html>

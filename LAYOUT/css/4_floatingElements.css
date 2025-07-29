@@ -10,6 +10,19 @@ body {
 .tweet {
   border: 3px solid black;
 }
+/*De esta manera no contaminamos nuestro html*/
+.tweet::after {
+  content: " "; /* como es un inline element, usaremos display block para que se comporte como un bloque */
+  display: block;
+  clear: both;
+}
+/* Ahora, habrán más elementos que necesitarán clear: asi que creas una clase general, todos le ponen el mismo nombre:*/
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
 .avatar {
   width: 5rem;
   height: 5rem;
