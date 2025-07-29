@@ -14,6 +14,7 @@ body {
 
 .boxes {
   border: 3px solid black;
+  position: relative; /* Establecemos el contenedor como relativo para que los hijos absolutos se posicionen respecto a él */
 }
 
 .box {
@@ -30,13 +31,15 @@ con respecto a su padre o contenedor. */
   background-color: tomato;
   /* Por defecto el elemento tiene position: static, 
      pero podemos cambiarlo a relative para poder usar top, left, etc. */
-  position: relative; /* cambiamos su posición en relación a su posición original */
-  left: 3rem; /* desplazamos 5rem a la derecha, también se pueden usar unidades */
-  top: -3rem; /* desplazamos 5rem hacia arriba */
-  z-index: -1; /* esta propiedad controla el apilamiento de los elementos, 
-                 un valor negativo lo coloca detrás de otros elementos */
+  position: absolute;
+  right: 0; /* Se posiciona a la derecha del contenedor */
+  bottom: 0; /* Se posiciona en la parte inferior del contenedor */
 }
+/* La propiedad position: absolute hace que el elemento se posicione en relación a su contenedor más cercano con position: relative, 
+   en este caso, .boxes. Si no hay un contenedor relativo, se posiciona en relación al viewport. */
 
+/* when we absolutely postion an element, that element is removed from the normal flow ot 
+the page, and all the other elements will rend as if that element does not exist. */
 .box-three {
   background-color: dodgerblue;
 }
