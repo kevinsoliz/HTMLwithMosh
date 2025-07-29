@@ -16,8 +16,12 @@ body {
 
 .boxes {
   border: 3px solid black;
-  position: relative; /* Establecemos el contenedor como relativo para que los hijos absolutos se posicionen respecto a él */
+  position: relative;
 }
+/* There are two ways to set th size of position elements:
+    1. Using width and height
+    2. Combination of top, right, bottom, left
+    In this case, we will use width and height */
 
 .box {
   width: 5rem;
@@ -27,15 +31,15 @@ body {
 .box-one {
   background-color: gold;
 }
-/* A veces querremos que un elemento se posicione en relación al viewport, 
-   en lugar de a su contenedor. Para esto usamos position: fixed */
+
 .box-two {
   background-color: tomato;
-  /* Por defecto el elemento tiene position: static, 
-     pero podemos cambiarlo a relative para poder usar top, left, etc. */
   position: fixed;
-  top: 0; /* Posiciona el elemento 0px desde la parte superior del viewport y se va a quedar
-  ahi aunque hagas scroll. Lo podrias usar para una top navigation bar */
+  top: 0;
+  left: 2rem;
+  right: 2rem;
+  width: auto; /* This will make the box take the full width of the viewport minus the left and right margins */
+  z-index: 1;
 }
 
 .box-three {
