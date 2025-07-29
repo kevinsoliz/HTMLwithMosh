@@ -15,6 +15,9 @@ body {
   height: 90vh;
   /* Qué pasa con align-content? 
   Esta propiedad solo funciona cuando tenemos multiple lines in our flex container. */
+  flex-wrap: wrap; /* por defecto es nowrap.
+  Con esto añadimos otra linea más y ya puedes usar align-content */
+  align-content: center; /* para alinear los elementos a lo largo del eje secundario CROSS, en este caso el vertical */
 }
 
 .box {
