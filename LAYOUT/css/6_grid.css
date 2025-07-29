@@ -6,18 +6,12 @@ body {
   display: grid;
   grid-template: repeat(3, 100px) / repeat(2, 100px); /* shorthand syntax */
   border: 3px solid dodgerblue;
-  justify-items: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
-  justify-content: center; /* Center the grid within the container */
-  align-content: center; /* Center the grid within the container vertically */
-  height: 70vh;
-  /*para recordar:
-  si ves content es porque es el contenedor,
-  si ves items es porque es el item dentro del contenedor*/
+  justify-items: stretch; /* valor por defecto: stretch*/
+  align-items: stretch; /* valor por defecto: stretch
+  Para que funcione los items no deben tener ni width ni height.*/
+  height: 100vh; /* Full viewport height */
 }
 
 .box {
-  width: 5rem;
-  height: 5rem;
   background-color: gold;
 }
