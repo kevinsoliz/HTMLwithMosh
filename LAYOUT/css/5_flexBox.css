@@ -12,9 +12,10 @@ body {
 }
 /*Ahora queremos mover una sola caja hacia arriba.*/
 .box {
-  flex-basis: 10rem; /* por defecto es auto: el browser va a buscar the width.
+  flex-basis: 5rem; /* por defecto es auto: el browser va a buscar the width.
   Si lo cambias va hacer override del width por que estmos en row, si lo ponemos en colum el override
   va a aplicar al height.*/
+  flex-grow: 1; /* con esta propiedad los items pueden ocupar el espacio restante. Por defecto es 0*/
   width: 5rem;
   height: 5rem;
   background-color: dodgerblue;
@@ -22,5 +23,8 @@ body {
 }
 
 .box-one {
-  flex-basis: 5rem;
+  flex-grow: 2; /* No va a oupar el doble, el browser
+  va a buscar el growth factor de los items, para el primero es 2 para el resto es 1, 
+  en total 4, el browse va a tomar el 100% del espacio restante y lo va a dividir en 4 partes,
+  el primero va a ocupar 2 partes y los otros 2 partes cada uno.*/
 }
