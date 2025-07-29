@@ -8,10 +8,13 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 70vh;
 }
 /*Ahora queremos mover una sola caja hacia arriba.*/
 .box {
+  flex-basis: 10rem; /* por defecto es auto: el browser va a buscar the width.
+  Si lo cambias va hacer override del width por que estmos en row, si lo ponemos en colum el override
+  va a aplicar al height.*/
   width: 5rem;
   height: 5rem;
   background-color: dodgerblue;
@@ -19,6 +22,5 @@ body {
 }
 
 .box-one {
-  /*Con esto override the align-items*/
-  align-self: flex-start;
+  flex-basis: 5rem;
 }
