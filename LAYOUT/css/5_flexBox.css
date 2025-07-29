@@ -2,27 +2,23 @@ body {
   margin: 10px;
 }
 
-/* Para poner los elementos en horizontal: */
 .container {
   border: 3px solid grey;
-  display: flex; /* ya está */
-  flex-direction: row; /* también tienes column-reverse, también row-reverse (esto se usa en right to left languages)*/
-  /* si queremos que los elementos se alineen a lo largo de todo el contenedor */
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center; /* para alinear los elementos a lo largo del eje secundario CROSS, en este caso el vertical
-  En este caso no va a pasar nada porque el contenedor no tiene suficiente espacio. 
-  Tienes que añadir un height. */
+  align-items: center;
   height: 90vh;
-  /* Qué pasa con align-content? 
-  Esta propiedad solo funciona cuando tenemos multiple lines in our flex container. */
-  flex-wrap: wrap; /* por defecto es nowrap.
-  Con esto añadimos otra linea más y ya puedes usar align-content */
-  align-content: center; /* para alinear los elementos a lo largo del eje secundario CROSS, en este caso el vertical */
 }
-
+/*Ahora queremos mover una sola caja hacia arriba.*/
 .box {
   width: 5rem;
   height: 5rem;
   background-color: dodgerblue;
   margin: 1rem;
+}
+
+.box-one {
+  /*Con esto override the align-items*/
+  align-self: flex-start;
 }
