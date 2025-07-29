@@ -27,5 +27,5 @@ body {
 
 /* Hiding elements */
 .first {
-  display: none; /* el segundo parrafo toma su lugar */
+  visibility: hidden; /*El primer parrafo no se ve pero ocupa su espacio.*/
 }
