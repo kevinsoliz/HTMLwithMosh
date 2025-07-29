@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10px;
+}
+.tweet {
+  border: 3px solid black;
+  /* clearfix hack: si no ajustas esto el contenedor no encierra a avatar, este desborda. */
+  overflow: auto;
+}
+.avatar {
+  width: 5rem;
+  height: 5rem;
+  background-color: gold;
+  /* this will float the avatar element to the left side of its container, el resto se alineará
+a la derecha de avatar. */
+  float: left;
+  margin-right: 0.5rem; /* usamos rem para que si text size changes the sapace also changes accordingly.*/
+}
