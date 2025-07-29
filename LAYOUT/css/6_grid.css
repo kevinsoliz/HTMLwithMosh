@@ -5,7 +5,7 @@ body {
 .container {
   display: grid;
   /* 3 x 2 */
-  grid-template-rows: 100px 100px 100px;
-  grid-template-columns: 100px 100px;
+  grid-template-rows: repeat(3, 100px); /* facilita los cambios */
+  grid-template-columns: repeat(2, 100px); /* facilita los cambios */
   border: 3px solid dodgerblue;
 }
