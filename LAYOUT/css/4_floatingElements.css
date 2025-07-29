@@ -9,8 +9,6 @@ body {
 }
 .tweet {
   border: 3px solid black;
-  /* clearfix hack: si no ajustas esto el contenedor no encierra a avatar, este desborda. */
-  overflow: auto;
 }
 .avatar {
   width: 5rem;
@@ -20,4 +18,11 @@ body {
 a la derecha de avatar. */
   float: left;
   margin-right: 0.5rem; /* usamos rem para que si text size changes the sapace also changes accordingly.*/
+}
+
+/*Si queremos que el texto deje de ajustarse alrededor del avatar, podemos usar clear.*/
+/* clear: both; significa que el elemento no se ajustará a la izquierda ni a la derecha de los elementos flotantes anteriores.*/
+
+.clear {
+  clear: both; /* becuase we have an element floating to the left, puedes usar -both- */
 }
