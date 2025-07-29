@@ -14,3 +14,12 @@ body {
 .box {
   background-color: gold;
 }
+
+.box-one {
+  /* el número de celdas que el item va a ocupar, por defecto es 1
+    puedes especificar desde donde a donde con "/", la última linea es -1, y si quieres contar 
+    celdas usa span n */
+  grid-column: 1 / span 2;
+  /* el item se va a la segunda fila y puede ocupar las filas que quieras con "/" */
+  grid-row: 2 / span 2;
+}
