@@ -1,0 +1,40 @@
+body {
+  margin: 10px;
+}
+
+/* mobile firs approach */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  background: gold;
+  padding: 1rem;
+}
+
+.box:nth-of-type(2) {
+  background: dodgerblue;
+}
+
+/* a breakpoint is when our design breaks */
+
+@media screen and (min-width: 600px) /* and (max-width: 900px) */ {
+  /* si es true se aplicará el estilo*/
+  .container {
+    flex-direction: row;
+  }
+}
+
+/* no uses las medidas que hay por internet, por que los dispositivos cambian constantemente,
+centrate en tu diseño.
+Por cierto, podemos aplicar más especificaciones al mediquerie */
+
+@media screen and (min-width: 900px) {
+  .container {
+    flex-direction: row;
+  }
+  .box {
+    background: white;
+  }
+}
