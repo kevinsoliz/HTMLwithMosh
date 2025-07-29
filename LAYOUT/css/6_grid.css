@@ -4,14 +4,15 @@ body {
 
 .container {
   display: grid;
-  grid-template: repeat(3, 100px) / repeat(2, 100px); /* shorthand syntax */
+  grid-template: 100px auto 100px / 1fr 1fr;
+  /*El porcentaje calcula el espacio sobre el ancho del contenedor y 
+  pueden provocar desbordamientos */
+  /* También se pueden usar unidades fr (fracciones) para dividir el espacio disponible de forma proporcional.
+    Por ejemplo, '1fr 2fr' asigna 1 parte al primer elemento y 2 partes al segundo, adaptándose automáticamente al tamaño del contenedor.
+    Las fr son útiles porque permiten crear diseños flexibles y responsivos sin necesidad de cálculos manuales de porcentajes o píxeles. */
   border: 3px solid dodgerblue;
-  justify-items: stretch; /* valor por defecto: stretch*/
-  align-items: stretch; /* valor por defecto: stretch
-  Para que funcione los items no deben tener ni width ni height.*/
-  height: 100vh; /* Full viewport height */
+  height: 70vh;
 }
-
 .box {
   background-color: gold;
 }
