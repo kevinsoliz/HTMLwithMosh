@@ -14,22 +14,24 @@
     <article class="tweet">
       <div class="avatar"></div>
       <p>Lorem ipsum dolor sit amet.</p>
-      <!-- Estos párrafos no tienen ningun espacio con respecto al div, tendrás
-       que aplicar un margin al div o a los párrafos.-->
-      <p class="clear">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere dolorem
-        qui ea expedita voluptatibus nemo labore perspiciatis aliquam! Eos,
-        soluta reprehenderit laboriosam eveniet ipsa labore beatae ratione vel
-        at voluptas ab autem et optio, distinctio eum? Unde sint, sed, earum
-        rerum dicta iure suscipit doloremque porro ad deserunt nemo eaque?
-      </p>
+      <div class="clear"></div>
     </article>
     <article>
       <h2>Problema con float</h2>
       <p>
         Se produce parent collapsing, significa que los padres no ven los float
-        elements y estos colapsan.
+        elements y estos colapsan. Hay dos soluciones:
       </p>
+
+      <ul>
+        <li>
+          Agregar un elemento con clear: both; En este caso un div con la clase
+          clear. Cada vez que uses float, debes agregar un elemento con clear.
+          Esta opción no es buena, ya que es un elemento extra que no aporta
+          nada al browser engines.
+        </li>
+        <li>Podemos usar pseudoelementos.</li>
+      </ul>
     </article>
   </body>
 </html>
