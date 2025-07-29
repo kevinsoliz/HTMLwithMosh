@@ -5,11 +5,9 @@ body {
 .container {
   display: grid;
   grid-template: 100px auto 100px / 1fr 1fr;
-  /*El porcentaje calcula el espacio sobre el ancho del contenedor y 
-  pueden provocar desbordamientos */
-  /* También se pueden usar unidades fr (fracciones) para dividir el espacio disponible de forma proporcional.
-    Por ejemplo, '1fr 2fr' asigna 1 parte al primer elemento y 2 partes al segundo, adaptándose automáticamente al tamaño del contenedor.
-    Las fr son útiles porque permiten crear diseños flexibles y responsivos sin necesidad de cálculos manuales de porcentajes o píxeles. */
+  row-gap: 10px;
+  column-gap: 10px;
+  gap: 10px; /* ambos row y column gap */
   border: 3px solid dodgerblue;
   height: 70vh;
 }
