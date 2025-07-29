@@ -8,7 +8,11 @@ body {
   display: flex; /* ya está */
   flex-direction: row; /* también tienes column-reverse, también row-reverse (esto se usa en right to left languages)*/
   /* si queremos que los elementos se alineen a lo largo de todo el contenedor */
-  justify-content: space-between; /* por defecto es flex-start.. también tienes space-between */
+  justify-content: center;
+  align-items: center; /* para alinear los elementos a lo largo del eje secundario CROSS, en este caso el vertical
+  En este caso no va a pasar nada porque el contenedor no tiene suficiente espacio. 
+  Tienes que añadir un height. */
+  height: 90vh;
 }
 
 .box {
