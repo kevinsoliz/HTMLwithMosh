@@ -32,10 +32,10 @@ body {
 }
 
 .containerGrid {
-  height: 100vh;
+  /*height: 100vh; no es necesario, ya que el grid se adapta al contenido*/
   display: grid;
-  grid-template: repeat(9, 1fr) / repeat(1, 1fr);
-  gap: 1%;
+  /*grid-template: repeat(9, 1fr) / repeat(1, 1fr); */
+  grid-gap: 10px;
   margin: 1%;
 }
 
@@ -47,13 +47,14 @@ body {
 
 @media screen and (min-width: 768px) {
   .containerGrid {
-    grid-template: repeat(5, 1fr) / repeat(2, 1fr);
+    grid-template-columns:/* repeat(5, 1fr) / */ repeat(2, 1fr);
   }
 }
 
 @media screen and (min-width: 1024px) {
   .containerGrid {
-    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1% 15%;
   }
 
   .box-two {
