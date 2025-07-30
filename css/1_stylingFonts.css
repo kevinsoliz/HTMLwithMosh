@@ -1,11 +1,18 @@
 @font-face {
   font-family: "greatvibes";
   src: url("fonts/greatvibes/greatvibes-regular-webfont.woff2") format("woff2"),
-    url("fonts/greatvibes/greatvibes-regular-webfont.woff") format("woff");
+    url("css/fonts/greatvibes/greatvibes-regular-webfont.woff") format("woff");
   font-weight: regular;
   font-style: regular;
+  /*Hay que usar la siguiente propiedad para minimizar el FOUT
+  No queremos auto, tampoco swap porque este cambiará a la siguiente fuente y si
+  nuestra fuenta aún tarda en descargarse va a cambiar a la siguiente. Nunca uses block porque
+  esconderá el texto. También puedes usar optional, que se parece a fallback, le
+  estás diciendo al browser que tu fuente no es tan importante y que si se 
+  descarga la puede usar. */
+  font-display: fallback;
 }
-
+/* Hay otra manera de evitar el FOUT, vas y te descargas la fuente pero solo los símbolos necesarios en SUBSETTING. Así pesará menos. */
 body {
   margin: 10px;
   font-family: Arial, Helvetica, sans-serif;
