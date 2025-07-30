@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+
+.container {
+  /* al principio puse width: 100vw; pero me salia una 
+  barra de scroll horizontal porque el viewport incluye la barra de scroll vertical*/
+  width: 100%;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 10px 0; /* me salia un padding de 40px por defecto, las listas lo llevan asi.*/
+}
+/*Cometi el error de darle al nav la clase container por eso no funcionaba.*/
+.nav {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style-type: none;
+  margin: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .nav {
+    padding: 1rem;
+  }
+}
