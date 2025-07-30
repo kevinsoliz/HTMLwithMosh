@@ -11,7 +11,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0;
-  padding: 10px 0; /* me salia un padding de 40px por defecto, las listas lo llevan asi.*/
+  padding: 20px 0; /* me salia un padding de 40px por defecto, las listas lo llevan asi.*/
 }
 /*Cometi el error de darle al nav la clase container por eso no funcionaba.*/
 .nav {
@@ -27,6 +27,6 @@ body {
     justify-content: flex-end;
   }
   .nav {
-    padding: 1rem;
+    padding: 0 10px;
   }
 }
