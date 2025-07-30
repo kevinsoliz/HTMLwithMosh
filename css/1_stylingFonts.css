@@ -1,10 +1,18 @@
+@font-face {
+  font-family: "greatvibes";
+  src: url("fonts/greatvibes/greatvibes-regular-webfont.woff2") format("woff2"),
+    url("fonts/greatvibes/greatvibes-regular-webfont.woff") format("woff");
+  font-weight: regular;
+  font-style: regular;
+}
+
 body {
   margin: 10px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
-  font-family: Georgia, "Times New Roman", Times, serif; /*Web-safe fonts*/
+  font-family: "greatvibes", "Times New Roman", Times, serif; /*Web-safe fonts*/
 }
 
 p {
