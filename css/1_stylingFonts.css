@@ -1,21 +1,7 @@
 html {
   font-size: 62, 5%; /*1rem = 10px, 62.5% de 16px*/
 }
-@font-face {
-  font-family: "greatvibes";
-  src: url("fonts/greatvibes/greatvibes-regular-webfont.woff2") format("woff2"),
-    url("css/fonts/greatvibes/greatvibes-regular-webfont.woff") format("woff");
-  font-weight: regular;
-  font-style: regular;
-  /*Hay que usar la siguiente propiedad para minimizar el FOUT
-  No queremos auto, tampoco swap porque este cambiará a la siguiente fuente y si
-  nuestra fuenta aún tarda en descargarse va a cambiar a la siguiente. Nunca uses block porque
-  esconderá el texto. También puedes usar optional, que se parece a fallback, le
-  estás diciendo al browser que tu fuente no es tan importante y que si se 
-  descarga la puede usar. */
-  font-display: fallback;
-}
-/* Hay otra manera de evitar el FOUT, vas y te descargas la fuente pero solo los símbolos necesarios en SUBSETTING. Así pesará menos. */
+
 body {
   margin: 10px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -24,6 +10,9 @@ body {
   font-size: 1rem;
   line-height: 1.2; /* Para ajustar el espacio entre líneas. Si 
   lo usas sin unidades se comportará como un multiplicador */
+  letter-spacing: 1px; /*En este caso usa pixeles, los rem no funcionan bien
+  En dev tools lo ajustas mejor*/
+  word-spacing: 3px; /*Espacio entre palabras*/
 
 }
 h1,
@@ -46,7 +35,6 @@ h2 {
 
 p {
   color: #333;
-  margin: 0.5rem 0 1rem; /* le estaba poniendo el margin al body, error de principiante */
 }
 
 @media screen and (min-width: 600px) {
