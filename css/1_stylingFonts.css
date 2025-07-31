@@ -31,11 +31,7 @@ h2 {
 p {
   color: #333;
   width: 50ch;
-  column-count: 2; /*Divide el texto en dos columnas*/
-  /* podemos modificar el gap entre columnas con column-gap */
-  column-gap: 2rem; /*Espacio entre columnas*/
-  /* incluso podemos añadir una linea entre columnas */
-  column-rule: 3px dotted #ccc;
+  direction: rtl; /* lo suyo es que lo pongas en el body */
 }
 
 @media screen and (min-width: 600px) {
