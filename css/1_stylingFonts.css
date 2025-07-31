@@ -28,10 +28,23 @@ h2 {
   font-size: 3.157rem;
 }
 
-p {
+p{
   color: #333;
-  /* Para el length del texto usa ch, que es el ancho del caracter "0" en la fuente actual */
-  width: 50ch; /* 50 caracteres de ancho */
+  width: 50ch;
+  /*text-align: center;
+  text-indent: 1rem; queremos que el indent se aplique al segundo parrafo para eso: p + p 
+  text-decoration: underline; linetrough se usa para precios que ya no están
+  text-transform: capitalize; muy util para headings */
+  /*Para truncar un texto necesitas cuatro propiedades:
+  1. fixed width: 50ch;
+  2. white-space: nowrap; una sola línea
+  3. overflow: hidden; para ocultar el texto que se sale del contenedor
+  4. text-overflow: ellipsis; para mostrar los puntos suspensivos (...)
+  Hay otra propiedad para truncar texto por el número de líneas:
+  line-clamp: 3; el texto se truncará después de 3 líneas.
+  */
+  white-space: nowrap;
+  
 }
 
 @media screen and (min-width: 600px) {
