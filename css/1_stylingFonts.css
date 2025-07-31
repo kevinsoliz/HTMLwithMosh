@@ -15,16 +15,15 @@
 /* Hay otra manera de evitar el FOUT, vas y te descargas la fuente pero solo los símbolos necesarios en SUBSETTING. Así pesará menos. */
 body {
   margin: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
 }
 
 h1 {
-  font-family: "greatvibes", "Times New Roman", Times, serif; /*Web-safe fonts*/
+  font-family: Roboto, Arial, Helvetica, sans-serif; /*Web-safe fonts*/
 }
 
 p {
-  font-weight: bold;
-  font-style: italic;
   font-size: 1rem;
   color: #333;
 }
