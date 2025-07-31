@@ -8,12 +8,7 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; /*System font stack*/
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.2; /* Para ajustar el espacio entre líneas. Si 
-  lo usas sin unidades se comportará como un multiplicador */
-  letter-spacing: 1px; /*En este caso usa pixeles, los rem no funcionan bien
-  En dev tools lo ajustas mejor*/
-  word-spacing: 3px; /*Espacio entre palabras*/
-
+  line-height: 1.2;
 }
 h1,
 h2,
@@ -35,6 +30,8 @@ h2 {
 
 p {
   color: #333;
+  /* Para el length del texto usa ch, que es el ancho del caracter "0" en la fuente actual */
+  width: 50ch; /* 50 caracteres de ancho */
 }
 
 @media screen and (min-width: 600px) {
