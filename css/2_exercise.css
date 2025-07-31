@@ -1,0 +1,44 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  margin: 5rem auto;
+  padding: 0 3%;
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  line-height: 2;
+  max-width: 1140px; /*Diferencia importante entre width y max-width: 
+  el primero te crea scroll, el segundo no*/
+}
+
+h1:first-of-type {
+  font-size: 5.61rem;
+  line-height: 1.2;
+  margin: 3rem 0 2rem;
+}
+
+h2 {
+  font-size: 4.209rem;
+}
+
+h3 {
+  font-size: 3.157rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Oswald, Arial, Helvetica, sans-serif;
+  margin: 2rem 0 -2rem;
+}
+
+p {
+  font-family: Lora, "Times New Roman", Times, serif;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
